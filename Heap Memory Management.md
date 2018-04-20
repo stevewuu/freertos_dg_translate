@@ -185,28 +185,27 @@ vPortDefineHeapRegions（）用于指定每个单独的内存区域的起始地�
 下表列出了vPortDefineHeapRegions（）参数。
 
 <table>
-	<thead>
-		<tr>
-			<td>
-				Parameter Name/ Returned Value
-			</td>
-			<td>
-				Description
-			</td>
-		</tr>
-	</thead>
-
-	<tbody>
-		<tr>
-			<td>
-				pxHeapRegions
-			</td>
-			<td>
-				A pointer to the start of an array of HeapRegion_t structures. Each structure in the array describes the start address and length of a memory area that will be part of the heap when heap_5 is used. The HeapRegion_t structures in the array must be ordered by start address. The HeapRegion_t structure that describes the memory area with the lowest start address must be the first structure in the array, and the HeapRegion_t structure that describes the memory area with the highest start address must be the last structure in the array. The end of the array is marked by a HeapRegion_t structure that has its pucStartAddress member set
-				to NULL.
-			</td>
-		</tr>
-	</tbody>
+<thead>
+<tr>
+<td>
+Parameter Name/ Returned Value
+</td>
+<td>
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+pxHeapRegions
+</td>
+<td>
+A pointer to the start of an array of HeapRegion_t structures. Each structure in the array describes the start address and length of a memory area that will be part of the heap when heap_5 is used. The HeapRegion_t structures in the array must be ordered by start address. The HeapRegion_t structure that describes the memory area with the lowest start address must be the first structure in the array, and the HeapRegion_t structure that describes the memory area with the highest start address must be the last structure in the array. The end of the array is marked by a HeapRegion_t structure that has its pucStartAddress member set
+to NULL.
+</td>
+</tr>
+</tbody>
 </table>
 
 举例来说，考虑下图中所示的假想的存储器映射，它包含三个独立的RAM块：RAM1，RAM2和RAM3。 可执行代码被放置在只读存储器中，但未显示。
@@ -293,27 +292,26 @@ xPortGetFreeHeapSize（）API函数原型
 下表列出了xPortGetFreeHeapSize（）返回值。
 
 <table>
-	<thead>
-		<tr>
-			<td>
-				Parameter Name/ Returned Value
-			</td>
-			<td>
-				Description
-			</td>
-		</tr>
-	</thead>
-
-	<tbody>
-		<tr>
-			<td>
-				Returned value
-			</td>
-			<td>
-				The number of bytes that remain unallocated in the heap at the time xPortGetFreeHeapSize() is called.
-			</td>
-		</tr>
-	</tbody>
+<thead>
+<tr>
+<td>
+Parameter Name/ Returned Value
+</td>
+<td>
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Returned value
+</td>
+<td>
+The number of bytes that remain unallocated in the heap at the time xPortGetFreeHeapSize() is called.
+</td>
+</tr>
+</tbody>
 </table>
 
 ### xPortGetMinimumEverFreeHeapSize（）API函数
@@ -327,27 +325,27 @@ xPortGetMinimumEverFreeHeapSize（）API函数返回自FreeRTOS应用程序开�
 下表列出了xPortGetMinimumEverFreeHeapSize（）返回值。
 
 <table>
-	<thead>
-		<tr>
-			<td>
-				Parameter Name/ Returned Value
-			</td>
-			<td>
-				Description
-			</td>
-		</tr>
-	</thead>
+<thead>
+<tr>
+<td>
+Parameter Name/ Returned Value
+</td>
+<td>
+Description
+</td>
+</tr>
+</thead>
 
-	<tbody>
-		<tr>
-			<td>
-				Returned value
-			</td>
-			<td>
-				The minimum number of unallocated bytes that have existed in the heap since the FreeRTOS application started executing.
-			</td>
-		</tr>
-	</tbody>
+<tbody>
+<tr>
+<td>
+Returned value
+</td>
+<td>
+The minimum number of unallocated bytes that have existed in the heap since the FreeRTOS application started executing.
+</td>
+</tr>
+</tbody>
 </table>
 
 
